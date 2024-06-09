@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stupify</title>
+    <link rel="stylesheet" href="./stupify.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Stupify</h1>
+        <input type="file" id="audioInput" accept="audio/*" multiple>
+        <button class="button" onclick="storeAudios()">Store Audios</button>
+
+        <audio id="audioPlayer" controls></audio>
+
+        <div class="controls">
+            <button class="control-btn" onclick="prevSong()">Previous</button>
+            <button class="control-btn" onclick="startPlaylist()">Start</button>
+            <button class="control-btn" onclick="nextSong()">Next</button>
+            <button id="loopButton" class="control-btn" onclick="toggleLoop()">Loop Playlist: Off</button>
+            <button id="loopCurrentButton" class="control-btn" onclick="toggleLoopCurrent()">Loop Current: Off</button>
+        </div>
+    </div>
+
+    <script src="./stupify.js"></script>
+</body>
+
+</html>

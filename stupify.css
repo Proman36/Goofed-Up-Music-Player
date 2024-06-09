@@ -1,0 +1,125 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #121212;
+    color: #b3b3b3;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background: #181818;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #1db954;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    width: 100%;
+    background-color: #282828;
+    color: #b3b3b3;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+input[type="file"]::before {
+    content: 'Choose Files';
+    display: inline-block;
+    background: #1db954;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="file"]:hover::before {
+    background: #1ed760;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #1ed760;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.control-btn {
+    background-color: #282828;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    flex: 1;
+    font-weight: bold;
+    text-align: center;
+}
+
+.control-btn:hover {
+    background-color: #1db954;
+}
+
+#loopButton.loop-on,
+#loopCurrentButton.loop-on {
+    background-color: #1db954;
+}
+
+#loopButton.loop-on:hover,
+#loopCurrentButton.loop-on:hover {
+    background-color: #1ed760;
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #282828;
+    padding: 10px;
+}
